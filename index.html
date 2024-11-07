@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Realsstate</title>
+    <title>ОТКОСИ.РУ</title>
     <link rel="stylesheet" href="style/nullstyle.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.scss">
     <script src="script/script.js"></script>
     <script src="https://kit.fontawesome.com/117665a5d9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,7 +20,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </head>
 <body>
     <div class="wrapper" >
-        <header class="">
+        <header class="fixed top-0 bg-white w-full shadow-md">
             <div class="header__container flex	justify-between items-center py-5 	">
                
                 <ul class="nav  gap-[25px]">
@@ -27,26 +28,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <li><a href="#choose_us">Почему мы?</a></li>
                   <li><a href="#image-carousel">Отзывы</a></li>
                   <li><a href="#faq">Частые вопросы</a></li>
-                  <li><a href="#contact_us">Связаться с нами</a></li>
+                  <li><a  target='_blank' href="https://t.me/MySuperBot">Связаться с нами</a></li>
               </ul>
                 <div class="burger flex relative z-50 items-center justify-end w-[30px] h-[18px] flex ">
                   <span></span>
                   
                   </div>
                 <div class="logo uppercase font-black text-[#DB4A2B] text-[32px]">откоси.ру</div>
-                <ul class="flex gap-6 font-medium		">
-                    <li><a href="">Свяжитесь с нами</a></li>
+                <ul class="md:flex hidden gap-6 font-medium		">
+                    <li><a target='_blank' href="https://t.me/MySuperBot">Свяжитесь с нами</a></li>
                    
                 </ul>
             </div>
         </header>
         <main>
-          <section id="hero" class="  max-w-[680px]"  >
-            <div class="hero__container  flex md:flex-row flex-col-reverse flex	md:justify-between justify-center items-center">
-                <div class="content flex flex-col gap-6 text-left"> 
-                    <p class="font-semibold text-[72px] leading-[80px] ">Живи своей жизнью,<br>а не армейской!</p>
-                    <span class="text-[18px] text-[#61656E] leading-[26px]">Поможем законно избежать призыва и сохранить  твоё время.</span>
-                    <button class=" shadow max-w-[250px] text-[18px] text-white bg-[#DB4A2B]  py-3 rounded-full" id="Button">Бесплатная консультация</button>
+          <section id="hero" class="pt-[150px]" >
+            <div class="hero__container  flex md:flex-row flex-col-reverse 	md:justify-between justify-center items-center">
+                <div class="content flex flex-col gap-6 justify-center items-center md:items-start text-center md:text-left"> 
+                    <p class="font-bold text-2xl md:text-[72px] md:leading-[80px] ">Живи своей жизнью,<br>а не армейской!</p>
+                    <span class="text-[18px] text-[#61656E] md:leading-[26px]">Поможем законно избежать призыва и сохранить  твоё время.</span>
+                    <button  onclick="window.location.href='https://t.me/MySuperBot'" class="primary__button shadow  text-[18px] text-white bg-[#DB4A2B]  px-3 py-3 rounded-full" id="Button">Бесплатная консультация</button>
                   
                 </div>
                 <div class="image max-w-[530px] max-h-[481px]">
@@ -58,73 +59,73 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <section id="feature">
             <div class="features__container md:flex  	">
                 <div class="left mb-12">
-                	  <p class="text-[44px] font-medium leading-[52px] mb-[42px]">Более 6 000 мужчин  уже  избежали  призыва  с нашей помощью.</p> 
+                	  <p class="text-3xl md:text-[44px] text-center md:text-left font-medium md:leading-[52px] mb-[42px]">Более 6 000 мужчин  уже  избежали  призыва  с нашей помощью.</p> 
                       <img src="source/Welcome.png" class="max-w-[240px] max-h-[223px]" alt="">
                     </div>
                        <div class="content md:ml-20 max-w-[680px]">
                     <p class="text-lg	mb-20 text-[#61656E]">Армия  —  не  для  всех.  Если  вы  мечтаете  о  другом  будущем,  мы  поможем  вам  его  построить. ОТКОСИ.РУ  —  это  команда  опытных  юристов,  которые  знают  все  законные  способы  освобождения  от  службы.  Доверьте  нам  свои  заботы  и  начните  жить  полной  жизнью  уже  сегодня!</p>
-                <div class="numbers flex gap-[61px] ">
+                <div class="numbers flex md:flex-row flex-col justify-center items-center text-center gap-[61px] ">
                     <div class="feature">
                         <h2 class="text-4xl font-medium	mb-2">+100</h2>
-                        <span class="text-[#61656E] text-[18px] ">Успешных дел <span class="underline">ежемесячно</span></span>
+                        <span class="text-black text-[20px]  ">Успешных дел <span class="underline">ежемесячно</span></span>
                     </div>
                     <div class="feature">
                         <h2 class="text-4xl font-medium mb-2">+6K</h2>
-                        <span class="text-[#61656E] text-[18px]">спасенных судеб</span>
+                        <span class="text-black text-[20px] ">спасенных судеб</span>
                     </div>
                     <div class="feature">
                         <h2 class="text-4xl font-medium mb-2">100%</h2>
-                        <span class="text-[#61656E] text-[18px] uppercase">законно</span>
+                        <span class="text-black text-[20px]  uppercase">законно</span>
                     </div>
                 </div>
             </div>
            </section>
            <section id="choose_us">
             <div class="choose__container"> 
-                <div class="heading flex items-center flex mb-[70px]	justify-center text-[48px] font-semibold gap-[31px]">
-                <p>Почему выбирают нас?</p>
+                <div class="heading text-center md:text-left flex items-center md:flex-row flex-col flex mb-[70px]	justify-center text-3xl md:text-[48px] font-semibold gap-[31px]">
+                <p>Почему выбирают <span class="underline">нас?</span></p>
                 <img class="max-w-[250px]" src="source/Group.png" alt="">
             </div>
             <div class="cards flex flex	justify-evenly gap-[63px] flex-wrap">
-                <div class="card min-h-[320px] shadow-xl rounded-[5px] px-[15px] py-10 text-center max-w-[320px] flex  flex-col justify-center items-center">
-                    <img class="max-w-[60px]  mb-[21px]" src="source/user-expert_svgrepo.com.png" alt="">
+                <div class="card min-h-[320px]  rounded-[5px] px-[15px] py-10 text-center max-w-[320px] flex  flex-col justify-center items-center">
+                  <div class="max-w-[60px]  mb-[21px]" class="image"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#DB4A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg></div>  
                     <p class="font-semibold text-[24px] mb-[11px] leading-[26px] ">Команда экспертов</p>
                     <span class="text-[24px] text-[#61656E] leading-[26px]">Наши юристы  специализируются  на  военном  праве  и  имеют  большой  опыт  в  решении  вопросов,  связанных  с  призывом.</span>
                 </div>
-                <div class="card shadow-xl min-h-[320px] rounded-[5px] p-[15px] text-center max-w-[320px] flex  flex-col justify-center items-center">
-                    <img class="max-w-[60px]  mb-[21px]" src="source/user-expert_svgrepo.com.png" alt="">
-                    <p class="font-semibold text-[24px] mb-[11px] leading-[26px] ">Полная конфиденциальность</p>
+                <div class="card min-h-[320px] rounded-[5px] p-[15px] text-center max-w-[320px] flex  flex-col justify-center items-center">
+                  <div class="max-w-[60px]  mb-[21px]" class="image"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#DB4A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>  
+                  <p class="font-semibold text-[24px] mb-[11px] leading-[26px] ">Полная конфиденциальность</p>
                     <span class="text-[24px] text-[#61656E] leading-[26px]">Мы  гарантируем  полную  конфиденциальность  ваших  данных  и  не  передаем  их  третьим  лицам.</span>
                 </div>
-                <div class="card min-h-[320px] shadow-xl rounded-[5px] p-[15px] text-center max-w-[320px] flex  flex-col justify-center items-center">
-                    <img class="max-w-[60px]  mb-[21px]" src="source/user-expert_svgrepo.com.png" alt="">
-                    <p class="font-semibold text-[24px] mb-[11px] leading-[26px] ">Гарантия результата</p>
+                <div class="card min-h-[320px]  rounded-[5px] p-[15px] text-center max-w-[320px] flex  flex-col justify-center items-center">
+                  <div class="max-w-[60px]  mb-[21px]" class="image"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#DB4A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg></div>  
+                  <p class="font-semibold text-[24px] mb-[11px] leading-[26px] ">Гарантия результата</p>
                     <span class="text-[24px] text-[#61656E] leading-[26px]">Мы  уверены  в  своих  силах  и  готовы  предоставить  гарантии  на  наши  услуги.</span>
                 </div>
             </div></div>
            
            </section>
-           <section id="image-carousel" class="splide gallerey__container mb-[211px] " aria-label="Beautiful Images">
-            <div class="heading flex items-center flex mb-[70px]	justify-start text-[48px] font-semibold gap-[31px]">
+           <section id="image-carousel" class="splide gallerey__container  " aria-label="Beautiful Images">
+            <div class="heading flex items-center md:flex-row flex-col-reverse mb-[70px]	justify-start  gap-[31px]">
                 <img class="max-w-[300px]" src="source/Social Distancing.png" alt="">
-                <p>Что говорят о нас?</p>
+                <p class="md:text-[48px] text-3xl font-semibold font-black">Что говорят о нас?</p>
             </div>
             <div class="splide__track min-h-[350px] ">
                   <ul class="splide__list">
                       <li class="splide__slide">
-                          <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] shadow-md">
+                          <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
                             <div class="name text-[28px] font-semibold mb-5">Максим ,  19  лет</div>
                             <div class="content font-semibold text-[16px] text-[#61656E]">Думал, что  с  моими  проблемами  со  здоровьем  в  армию  заберут  100%,  но  ребята  смогли  найти  законный  способ  мне  помочь.  Спасибо  огромное  за  профессионализм,  поддержку  и  отличное  настроение!</div>
                           </div>
                       </li>
                       <li class="splide__slide">
-                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] shadow-md">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
                             <div class="name text-[28px] font-semibold mb-5">Даниил ,  22  года</div>
                             <div class="content font-semibold text-[16px] text-[#61656E]">Не  хотел  терять   жизнь  на  армию,  поэтому  обратился  в  ОТКОСИ.РУ.  И  не  пожалел!  Все  было  организовано  на  высшем  уровне:  от  первой  консультации  до  получения  военного  билета.  Особо  порадовала  возможность  решать  все  вопросы  онлайн.  Рекомендую  всем,  кто  ценит  свое  время  и  хочет  избежать  ненужных  проблем!</div>
                           </div>
                       </li>
                       <li class="splide__slide">
-                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] shadow-md">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
                             <div class="name text-[28px] font-semibold mb-5">Максим ,  19  лет</div>
                             <div class="content font-semibold text-[16px] text-[#61656E]">"Выражаю  огромную  благодарность  команде  ОТКОСИ.РУ!  Благодаря  вам  мой  сын  избавился  от  страха  перед  призывом  и  смог  сосредоточиться  на  учебе.  Вы  настоящие  волшебники!  Спасибо  за  вашу  работу  и  за  то,  что  помогаете  молодым  людям  строить  свою  жизнь  без  армии!</div>
                           </div>
@@ -132,47 +133,47 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   </ul>
             </div>
           </section>
-          <section id="faq">
-            <div class="faq__container md:flex gap-[20px]">
+          <section id="faq" class="">
+            <div class="faq__container md:flex  justify-between gap-[20px]">
                 <div class="content max-w-[550px] flex flex-col gap-[24px]">
                   <h2 class="text-[44px] font-medium leading-[42px]">Часто задаваемые вопросы</h2>
                   <p class=" text-[18px] text-[#61656E]">Если у вас есть вопросы, которые вы хотите задать<br>Мы ответим на все ваши вопросы.</p>
                   <img class="max-w-[280px]" src="source/Delete Confirmation.png" alt="">
                 </div>
-                <div class="questions flex flex-col max-h-[481px] gap-[20px] ">
+                <div class="questions flex flex-col max-w-[680px] gap-[20px] ">
                   <div class="question  p-[24px] border-[1px] rounded-[8px] border-[#E5E5E6]">
                     <div class="content flex justify-between ">
-                      <p class=" text-[24px] font-medium leading-[32px]">Сколько стоят ваши услуги?</p>
+                      <p class=" text-md md:text-[24px] font-medium md:leading-[32px]">Сколько стоят ваши услуги?</p>
                       <button class="toggle-btn">+</button>
                     </div>
-                    <div class="answer hidden">
+                    <div class="answer mt-5 hidden ">
                         <span>Стоимость наших услуг начинается от 130 000 рублей и зависит от сложности вашей ситуации</span>
                     </div>
                   </div>
                   <div class="question  p-[24px] border-[1px] rounded-[8px] border-[#E5E5E6]">
                     <div class="content flex justify-between ">
-                      <p class=" text-[24px] font-medium leading-[32px]">Что делать, если мне пришла повестка?</p>
+                      <p class=" text-md md:text-[24px] font-medium mr-[5px] md:leading-[32px]">Что делать, если мне пришла повестка?</p>
                       <button class="toggle-btn">+</button>
                     </div>
-                    <div class="answer hidden">
+                    <div class="answer mt-5 hidden ">
                         <span>  Не паникуйте!  Срочно  свяжитесь  с  нами.  Наши  юристы  проконсультируют  вас  и  помогут  разработать  план  действий.  Важно  не  игнорировать  повестку  и  не  нарушать  закон.</span>
                     </div>
                   </div>
                   <div class="question  p-[24px] border-[1px] rounded-[8px] border-[#E5E5E6]">
                     <div class="content flex justify-between ">
-                      <p class=" text-[24px] font-medium leading-[32px]">Работаете ли вы  с  теми,  кому  грозит  мобилизация?</p>
+                      <p class=" text-md md:text-[24px] font-medium mr-[5px] md:leading-[32px]">Работаете ли вы  с  теми,  кому  грозит  мобилизация?</p>
                       <button class="toggle-btn">+</button>
                     </div>
-                    <div class="answer hidden">
-                        <span>а,  мы  помогаем  гражданам,  подлежащим  мобилизации,  найти  законные  основания  для  освобождения  от  службы.</span>
+                    <div class="answer mt-5 hidden ">
+                        <span>Мы  помогаем  гражданам,  подлежащим  мобилизации,  найти  законные  основания  для  освобождения  от  службы.</span>
                     </div>
                   </div>
                   <div class="question md: p-[24px] border-[1px] rounded-[8px] border-[#E5E5E6]">
                     <div class="content flex justify-between ">
-                      <p class=" text-[24px] font-medium leading-[32px]">Какие гарантии вы предоставляете?</p>
+                      <p class=" text-md md:text-[24px] font-medium mr-[5px] md:leading-[32px]">Какие гарантии вы предоставляете?</p>
                       <button class="toggle-btn">+</button>
                     </div>
-                    <div class="answer hidden">
+                    <div class="answer mt-5 hidden ">
                         <span>Мы работаем официально и предоставляем все необходимые документы. Гарантируем полное сопровождение до получения освобождения.</span>
                     </div>
                   </div>
@@ -193,8 +194,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </section>
           <section id="contact_us">
             <div class="contact__container flex justify-center items-center flex-col">
-              <h3 class=" text-[64px] md:mb-[40px]  mb-5 font-bold ">Пиши нам сучка</h3>
-              <button class=" light-shadow text-white bg-[#DB4A2B] font-semibold text-[14px] rounded-full md:text-[24px] px-[43px] md:px-[73px] py-[9px]">Бесплатная консультация</button>
+              <h3 class=" text-3xl md:text-[64px] md:mb-[40px]  mb-5 font-bold ">Пиши нам сучка</h3>
+            <button   onclick="window.location.href='https://t.me/MySuperBot' target='_blank" class="  primary__button shadow text-white bg-[#DB4A2B] font-semibold  rounded-full md:text-[24px] px-[23px] md:px-[73px] py-[9px]">Бесплатная консультация</button>
           </div>
            </section>
         </main>
@@ -203,11 +204,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="content">
           <div class="brand">
             <div class="logo uppercase font-black text-[#DB4A2B] text-[32px]">откоси.ру</div>
-              <p class="text-2xl  mb-6">Живи своей жизнью, а не армейской!</p>
+              <p class=" text-sm md:text-xl  mb-6">Живи своей жизнью, а не армейской!</p>
               
           </div>
                 </div>
-                <div class="bottom mt-5 text-[#61656E] ">
+                <div class="bottom mt-5 text-[10px] text-[#61656E] ">
                     <p>&copy; 2024 Откоси.ру . Все права защищены .</p>
                    
                 </div>
