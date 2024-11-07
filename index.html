@@ -10,13 +10,15 @@
     <script src="script/script.js"></script>
     <script src="https://kit.fontawesome.com/117665a5d9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
 <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
-
+<meta name="description" content="Хотите получить военный билет и не служить в армии? ОТКОСИ.РУ -  юридическая помощь призывникам и военнообязанным.  Освобождение от призыва и мобилизации по здоровью, учебе, семейным обстоятельствам.">
+<link rel="icon" type="image/png" sizes="32x32" href="source/feelfree..png">
 </head>
 <body>
     <div class="wrapper" >
@@ -28,26 +30,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <li><a href="#choose_us">Почему мы?</a></li>
                   <li><a href="#image-carousel">Отзывы</a></li>
                   <li><a href="#faq">Частые вопросы</a></li>
-                  <li><a  target='_blank' href="https://t.me/MySuperBot">Связаться с нами</a></li>
+                  <li><a  target='_blank' href="https://t.me/alexandr_arry">Связаться с нами</a></li>
               </ul>
                 <div class="burger flex relative z-50 items-center justify-end w-[30px] h-[18px] flex ">
                   <span></span>
                   
                   </div>
-                <div class="logo uppercase font-black text-[#DB4A2B] text-[32px]">откоси.ру</div>
+                <div class="logo uppercase font-black text-[#DB4A2B] text-xl md:text-[32px]">откоси.ру</div>
                 <ul class="md:flex hidden gap-6 font-medium		">
-                    <li><a target='_blank' href="https://t.me/MySuperBot">Свяжитесь с нами</a></li>
+                    <li><a target='_blank' href="https://t.me/alexandr_arry">Свяжитесь с нами</a></li>
                    
                 </ul>
             </div>
         </header>
         <main>
           <section id="hero" class="pt-[150px]" >
-            <div class="hero__container  flex md:flex-row flex-col-reverse 	md:justify-between justify-center items-center">
+            <div data-aos="fade-up" class="hero__container   flex md:flex-row flex-col-reverse 	md:justify-between justify-center items-center">
                 <div class="content flex flex-col gap-6 justify-center items-center md:items-start text-center md:text-left"> 
                     <p class="font-bold text-2xl md:text-[72px] md:leading-[80px] ">Живи своей жизнью,<br>а не армейской!</p>
                     <span class="text-[18px] text-[#61656E] md:leading-[26px]">Поможем законно избежать призыва и сохранить  твоё время.</span>
-                    <button  onclick="window.location.href='https://t.me/MySuperBot'" class="primary__button shadow  text-[18px] text-white bg-[#DB4A2B]  px-3 py-3 rounded-full" id="Button">Бесплатная консультация</button>
+                    <button  onclick="window.location.href='https://t.me/alexandr_arry'" class="primary__button shadow  text-[18px] text-white bg-[#DB4A2B]  px-3 py-3 rounded-full" id="Button">Бесплатная консультация</button>
                   
                 </div>
                 <div class="image max-w-[530px] z-1 max-h-[481px]">
@@ -57,7 +59,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
            
           </section>  
           <section id="feature">
-            <div class="features__container md:flex  	">
+            <div data-aos="fade-up" class="features__container md:flex  	">
                 <div class="left mb-12">
                 	  <p class="text-3xl md:text-[44px] text-center md:text-left font-medium md:leading-[52px] mb-[42px]">Более 6 000 мужчин  уже  избежали  призыва  с нашей помощью.</p> 
                       <img src="source/Welcome.png" class="max-w-[240px] max-h-[223px]" alt="">
@@ -81,7 +83,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
            </section>
            <section id="choose_us">
-            <div class="choose__container"> 
+            <div data-aos="fade-up" class="choose__container"> 
                 <div class="heading text-center md:text-left flex items-center md:flex-row flex-col flex mb-[70px]	justify-center text-3xl md:text-[48px] font-semibold gap-[31px]">
                 <p>Почему выбирают <span class="underline">нас?</span></p>
                 <img class="max-w-[250px]" src="source/Group.png" alt="">
@@ -105,7 +107,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div></div>
            
            </section>
-           <section id="image-carousel" class="splide gallerey__container  " aria-label="Beautiful Images">
+           <section data-aos="fade-up" id="image-carousel" class="splide gallerey__container  " aria-label="Beautiful Images">
             <div class="heading flex items-center md:flex-row flex-col-reverse mb-[70px]	justify-start  gap-[31px]">
                 <img class="max-w-[300px]" src="source/Social Distancing.png" alt="">
                 <p class="md:text-[48px] text-3xl font-semibold font-black">Что говорят о нас?</p>
@@ -126,14 +128,98 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       </li>
                       <li class="splide__slide">
                         <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
-                            <div class="name text-[28px] font-semibold mb-5">Максим ,  19  лет</div>
-                            <div class="content font-semibold text-[16px] text-[#61656E]">"Выражаю  огромную  благодарность  команде  ОТКОСИ.РУ!  Благодаря  вам  мой  сын  избавился  от  страха  перед  призывом  и  смог  сосредоточиться  на  учебе.  Вы  настоящие  волшебники!  Спасибо  за  вашу  работу  и  за  то,  что  помогаете  молодым  людям  строить  свою  жизнь  без  армии!</div>
+                            <div class="name text-[28px] font-semibold mb-5">Егор, 27 лет</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">ОТКОСИ.РУ – настоящая находка!  Я  уже  отчаялся  найти  способ  законно  отсрочить  службу,  чтобы  закончить  важный  проект  на  работе.  Юристы  компании  внимательно  изучили  мою  ситуацию  и  нашли  решение.  Огромное  спасибо  за  профессионализм  и  оперативность!</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Дмитрий, 22 года</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Спасибо огромное юристам ОТКОСИ.РУ! Помогли разобраться с моими диагнозами, оформить все документы и получить военный билет. Быстро, профессионально, без лишних нервов. Рекомендую всем!</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Сергей, 18 лет</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Обратился в ОТКОСИ.РУ по совету друга. Не пожалел ни разу! Ребята просто молодцы, все объяснили, рассказали про мои права, помогли с документами. Теперь учусь в университете и не переживаю за армию.</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Андрей, 21 год</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">ОТКОСИ.РУ – настоящие профессионалы своего дела! Благодаря им я смог получить отсрочку и закончить институт. Очень грамотные специалисты, всегда на связи, отвечают на все вопросы. Спасибо вам огромное!</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Константин , 24 года</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]"> "Долго сомневался, стоит ли обращаться в ОТКОСИ.РУ, но в итоге решился и не пожалел. Мне помогли получить отсрочку по здоровью, хотя в военкомате сначала отказывались признавать мой диагноз.</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Кирилл, 19 лет</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Только  закончил  школу,  и  сразу  начались  повестки.  Родители  посоветовали  обратиться  в  ОТКОСИ.РУ.  Мне  помогли  собрать  все  необходимые  документы  для  поступления  в  вуз  и  получения  отсрочки.  Теперь  я  студент  и  могу  спокойно  учиться</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Степан, 23 года</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Я  спортсмен,  и  армия  могла  бы  поставить  крест  на  моей  карьере.  Благодаря  ОТКОСИ.РУ  я  смог  получить  отсрочку  и  продолжить  тренировки.  Теперь  я  готовлюсь  к  международным  соревнованиям  и  мечтаю  о  золотой  медали</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Илья, 29 лет</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Работаю  в  IT-компании,  и  для  меня  очень  важно  было  не  прерывать  карьеру.  ОТКОСИ.РУ  помогли  мне  оформить  отсрочку  как  ценному  специалисту.  Очень  грамотные  юристы,  все  объяснили  и  сделали  в  лучшем  виде.  Рекомендую!</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Никита, 25 лет</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Я  творческий  человек,  занимаюсь  музыкой.  Мне  важно  было  найти  способ  отсрочить  службу,  который  не  помешает  моему  развитию.  В  ОТКОСИ.РУ  мне  предложили  несколько  вариантов,  и  мы  вместе  выбрали  самый  подходящий.  Теперь  я  могу  спокойно  заниматься  творчеством  и  не  бояться  повестки!</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Матвей, 24 года</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Честно говоря,  не верил, что получится  "откосить"  легально.  Думал,  что  все  эти  компании  —  просто  развод.  Но  ОТКОСИ.РУ  доказали  обратное!  Помогли  мне  с  отсрочкой  по  здоровью,  причем  сделали  это  быстро  и  профессионально.  Теперь  я  спокоен  за  свое  будущее</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Тимофей, 28 лет</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Я  предприниматель,  и  мой  бизнес  требует  постоянного  внимания.  Служба  в  армии  для  меня  —  это  неприемлемая  потеря  времени  и  денег.  Обратился  в  ОТКОСИ.РУ  и  не  пожалел.  Мне  помогли  оформить  отсрочку  как  руководителю  компании.  Очень  благодарен  за  помощь</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Глеб, 19 лет</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">После  школы  планировал  поступать  в  университет,  но  повестка  в  военкомат  все  испортила.  Хорошо,  что  вовремя  обратился  в  ОТКОСИ.РУ.  Мне  помогли  с  отсрочкой  и  дали  возможность  спокойно  сдать  экзамены  и  поступить  на  бюджет.  Спасибо</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Арсений, 22 года</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">У  меня  плохое  зрение,  но  в  военкомате  сказали,  что  это  не  повод  для  отсрочки.  Обратился  в  ОТКОСИ.РУ,  и  они  помогли  мне  доказать  мою  непригодность  к  службе.  Огромное  спасибо  за  то,  что  отстояли  мои  права</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Ярослав, 21 год</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">Я  учусь  в  аспирантуре  и  планирую  заниматься  наукой.  Армия  совершенно  не  входила  в  мои  планы.  Специалисты  ОТКОСИ.РУ  помогли  мне  оформить  отсрочку  и  продолжить  обучение.  Теперь  я  могу  спокойно  работать  над  диссертацией  и  строить  карьеру  ученого!</div>
+                          </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="review p-[11px] m-3 rounded-[5px] md:min-w-[380px] ">
+                            <div class="name text-[28px] font-semibold mb-5">Святослав, 23 года</div>
+                            <div class="content font-semibold text-[16px] text-[#61656E]">У меня была сложная ситуация с военкоматом - путаница с документами, несколько отсрочек, которые то давали, то отменяли. Сам я бы точно не разобрался. ОТКОСИ.РУ помогли навести порядок во всех бумагах, представили мои интересы в военкомате и добились законной отсрочки. Огромное спасибо за вашу помощь и профессионализм!</div>
                           </div>
                       </li>
                   </ul>
             </div>
           </section>
-          <section id="faq" class="">
+          <section data-aos="fade-up" id="faq" class="">
             <div class="faq__container md:flex  justify-between gap-[20px]">
                 <div class="content max-w-[550px] flex flex-col gap-[24px]">
                   <h2 class="text-[44px] font-medium leading-[42px]">Часто задаваемые вопросы</h2>
@@ -192,10 +278,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 });
               </script>
           </section>
-          <section id="contact_us">
+          <section data-aos="fade-up" id="contact_us">
             <div class="contact__container flex justify-center items-center flex-col">
-              <h3 class=" text-3xl md:text-[64px] md:mb-[40px]  mb-5 font-bold ">Пиши нам сучка</h3>
-            <button   onclick="window.location.href='https://t.me/MySuperBot' " class="  primary__button shadow text-white bg-[#DB4A2B] font-semibold  rounded-full md:text-[24px] px-[23px] md:px-[73px] py-[9px]">Бесплатная консультация</button>
+              <h3 class=" text-3xl md:text-[64px] md:mb-[40px]  mb-5 font-bold ">Пиши нам!</h3>
+            <button   onclick="window.location.href='https://t.me/alexandr_arry' " class="  primary__button shadow text-white bg-[#DB4A2B] font-semibold  rounded-full md:text-[24px] px-[23px] md:px-[73px] py-[9px]">Бесплатная консультация</button>
           </div>
            </section>
         </main>
@@ -233,6 +319,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   } ).mount();
 } );
   </script>
-</body>    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
