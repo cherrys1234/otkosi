@@ -1,6 +1,7 @@
 
 html{
 	scroll-behavior: smooth;
+	
  }
  @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 	
@@ -23,7 +24,7 @@ overflow: clip;
 }
 
 section{
-	margin-bottom: 200px;
+	margin-bottom: 200px!important;
 }
 .splide__slide img {
 	width: 100%;
@@ -155,3 +156,32 @@ section{
 		transform: translateY(0);
 	}
 }
+
+.cards .card{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.review{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+.splide__pagination__page.is-active{
+	background: #DB4A2B!important;
+}
+
+.questions{width: -webkit-fill-available;}
+
+
+.primary__button{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 18px;}
+.primary__button:hover{
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 3px 18px #DB4A2B;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 99999999;
+  }
